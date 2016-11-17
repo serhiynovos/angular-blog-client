@@ -1,0 +1,23 @@
+<div class="panel panel-default register-form">
+    <div class="panel-heading">
+        <h3 class="panel-title">Registration</h3>
+    </div>
+
+    <div class="panel-body">
+       <form name="registerForm">
+          <div>
+            <label for="">Email</label>
+            <input class="form-control" ng-model="vm.email" type="email" required>
+        </div>
+
+        <div>
+            <label for="">Password</label>
+            <input class="form-control" ng-model="vm.password" type="password" required>
+        </div>
+       </form>
+    </div>
+
+    <div class="panel-footer">
+        <button type="submit" ng-click="vm.doRegister();" ng-disabled="registerForm.$invalid" class="btn btn-success">Registration</button>
+    </div>
+</div>
